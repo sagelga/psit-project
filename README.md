@@ -12,6 +12,8 @@ The project was meant to be teaching in Python 3.5.x and modules usages.
 
 But to this project, the data will visualizes others what we have found in that small bit of information.
 
+The data we have analyzed so far, may helps you understand what's happened a little bit more
+
 # How to use
 You can just look and see what's happened inside the codes.
 
@@ -37,7 +39,7 @@ Analytical Module and tools usages:
 - JuPyter (Web-based python programming)
 - Pandas (Graphing tools for python)
 
-## Teams of Contributors
+# Teams of Contributors
 These are all contributors to this project.
 - sagelga (ID : 59070022)
 - singleearkportraitphotography (ID : 59070058)
