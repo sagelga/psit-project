@@ -11,7 +11,7 @@ def total_north_pie_chart():
     labels = 'Chiang Rai', 'Mae Hong Son', 'Chiang Mai', 'Phayao', 'Nan', 'Lamphun', 'Lampang', 'Phrae', 'Uttaradit', 'Sukhothai', 'Tak', 'Phitsanulok', 'Kamphaeng Phet', 'Phichit', 'Phetchabun', 'Nakhon Sawan', 'Uthai Thani'
     fracs = [700936, 57536, 1349910, 264432, 225384, 269853, 446759, 253485, 255755, 304531, 221147, 480971, 353195, 288931, 443819, 554211, 177562]
     cs=cm.Set1(np.arange(40)/40.)
-    pie(fracs, labels=labels, autopct='%1.1f%%', shadow=False, startangle=90, colors=cs)
+    pie(fracs, labels=labels, autopct='%1.1f%%', shadow=False, startangle=90, colors=cs, pctdistance=.9)
     title('Total Car Registered in Northern in 2556')
     show()
 total_north_pie_chart()
