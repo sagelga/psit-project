@@ -12,7 +12,7 @@ def central_bkk():
     sedan_per_bus = []
     for i in range(len(y2)):
         sedan_per_bus.append((y2[i])*100)
-        #translate data into percent 
+        #translate data into percent
     p1 = plt.bar(position, sedan_per_bus, label='Sedan per Bus in central', color='c')
     # plot bar graph
     pos = [1.375,3.375,5.375,7.375,9.375]
