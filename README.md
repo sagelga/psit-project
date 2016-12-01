@@ -1,3 +1,5 @@
+# NOTE : Please open "PSIT Project Data Analysis.ipnb" for data visualizations and codes
+
 # Hey. Hi. Hello.
 The project was proposed by Prof. Chotipat Pornavalai as the subject of Problem Solving in Information Technology (PSIT) at King Mongkut Institute of Technology Ladkrabang.
 
