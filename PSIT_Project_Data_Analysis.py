@@ -1,72 +1,9 @@
-
-# coding: utf-8
-
-# # Welcome to PSIT Project Data Analysis Jupyter file!
+# Welcome to PSIT Project Data Analysis Jupyter file!
 # This is where the code runs (and don't run) and given out results to you!
 # We have a tons of analysis in this file, so please read what we have done!
 
-# # Hey. Hi. Hello.
-# The project was proposed by Prof. Chotipat Pornavalai as the subject of Problem Solving in Information Technology (PSIT) at King Mongkut Institute of Technology Ladkrabang.
-# 
-# We teamed up with 4 freshman colleges to analyze the data for the analytical purpose. :bowtie:
-# 
-# The initial ideas was to visualizes the data of 2015's national car registrations in the Kingdom of Thailand. Also to analytics using correlations to support our theories.
-# 
-# # Purpose
-# The project was to self-learning the python (original modules & imported modules)
-# 
-# But to this project, the data will visualizes others what we have found in that small bit of information.
-# 
-# The data we have analyzed so far, may helps you understand what's happened a little bit more
-# 
-# # How to use
-# You already know how to use! Congratulations!
-# 
-# You look at the files, and just absorb the information.
-# 
-# # Redistribution
-# We are happy :wink: to find you on playing along to this repository. Felt free to clone our repository.
-# 
-# If you want to clone the files, type as following. :octocat:
-# 
-# ```
-# git clone https://github.com/sagelga/PSIT_Project.git
-# ```
-# 
-# You're welcome! Be sure to star :star2: out project, that will cheers us up.
-# 
-# :heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart:
-# 
-# 
-# # References
-# Open Data from: https://data.go.th
-# 
-# Analytical Module and tools we used:
-# - JuPyter (Web-based programming with packages import)
-#   - http://jupyter.org/
-# 
-# - Pandas (Graphing tools)
-#   - http://pandas.pydata.org/
-# 
-# - MathPlotLib (Line Graphing tools)
-#   - http://matplotlib.org/
-# 
-# - NumPy (Graphing tools)
-#   - http://www.numpy.org/
-# 
-# # Teams of Contributors
-# These are all contributors to this project.
-# - sagelga (ID : 59070022) :jp::black_circle::bear:
-# - singleearkportraitphotography (ID : 59070058)
-# - tiltgod (ID : 59070084)
-# - closesun (ID : 59070095)
-# 
-
-# In[31]:
 
 """File Initialization Part"""
-# This will import the library needed in this whole file
-
 from pylab import *
 from matplotlib import cm
 import matplotlib.pyplot as plt
@@ -77,9 +14,6 @@ my_data = pd.read_csv('Thailand Vehicle Stats.csv', sep=',',header=None)
 
 # We just want to show what the CSV file looks like. It doesn't meant to do something.
 print(my_data)
-
-
-# In[32]:
 
 """This function will draw Pie Chart from data given"""
 def total_north_east_pie_chart():
@@ -95,11 +29,8 @@ def total_north_east_pie_chart():
     show()
 total_north_east_pie_chart()
 
-
-# In[33]:
-
 """This function will draw Pie Chart from data given"""
-def total_south_pie_chart(): 
+def total_south_pie_chart():
     figure(1, figsize=(6,6))
     ax = axes([0.1, 0.1, 0.8, 0.8])
     labels = 'Ranong', 'Pang Nya', 'Satun', 'Pattani', 'Narathiwat', 'Krabi', 'Phatthalung', 'Yala', 'Chumphon', 'Trang', 'Phuket', 'Surat Thani', 'Nakhon Si Thammarat', 'Songkhla'
@@ -111,9 +42,6 @@ def total_south_pie_chart():
     title('Total Car Registered in Southern in 2016')
     show()
 total_south_pie_chart()
-
-
-# In[34]:
 
 """This function will draw Pie Chart from data given"""
 def total_west_pie_chart():
@@ -129,9 +57,6 @@ def total_west_pie_chart():
     show()
 total_west_pie_chart()
 
-
-# In[35]:
-
 """This function will draw Pie Chart from data given"""
 def total_north_pie_chart():
     figure(1, figsize=(6,6))
@@ -145,9 +70,6 @@ def total_north_pie_chart():
     title('Total Car Registered in Northern in 2016')
     show()
 total_north_pie_chart()
-
-
-# In[37]:
 
 """This function will draw Pie Chart from data given"""
 def total_center_pie_chart():
@@ -163,9 +85,6 @@ def total_center_pie_chart():
     show()
 total_center_pie_chart()
 
-
-# In[38]:
-
 """This function will draw Pie Chart from data given"""
 def total_east_pie_chart():
     figure(1, figsize=(6,6))
@@ -179,9 +98,6 @@ def total_east_pie_chart():
     title('Total Car Registered in Eastern in 2016')
     show()
 total_east_pie_chart()
-
-
-# In[36]:
 
 """This function will draw Pie Chart from data given"""
 def top_region_pie_chart():
@@ -197,9 +113,6 @@ def top_region_pie_chart():
     show()
 top_region_pie_chart()
 
-
-# In[39]:
-
 """This function will draw Pie Chart from data given"""
 def top_type_pie_chart():
     figure(1, figsize=(6,6))
@@ -213,9 +126,6 @@ def top_type_pie_chart():
     title('Top 5 Registered Vehicle in Kingdom of Thailand in 2016')
     show()
 top_type_pie_chart()
-
-
-# In[40]:
 
 """This function will draw Pie Chart from data given"""
 def total_car_pie_chart():
@@ -232,9 +142,6 @@ def total_car_pie_chart():
     pie(fracs, labels=labels, autopct='%1.2f%%', shadow=False, explode=explode, startangle=180, colors=cs, pctdistance=1.0)
     show()
 total_car_pie_chart()
-
-
-# In[41]:
 
 """this fuction has shown number of sedan cars users and bus in Northern"""
 def northern():
@@ -253,9 +160,6 @@ def northern():
     plt.show()
 northern()
 
-
-# In[42]:
-
 '''this function show Percent of Bus:sedan in Southern area by picking data to calculate'''
 def south():
     position = [1,3,5,7,9]
@@ -270,9 +174,6 @@ def south():
     plt.xticks(pos, ('Surat Thani','Nakhon Si Thammarat','Phuket','Songkhla','Yala'))
     plt.show()
 south()
-
-
-# In[43]:
 
 """this fuction has shown number of sedan cars users and bus in NEast"""
 def neast():
@@ -289,9 +190,6 @@ def neast():
     plt.show()
 neast()
 
-
-# In[44]:
-
 '''this function show Percent of Bus:sedan in central add bkk area by picking data to calculate'''
 def central_bkk():
     position = [1,3,5,7,9]
@@ -306,9 +204,6 @@ def central_bkk():
     plt.xticks(pos, ('Bangkok','Ayuthaya','Nonthaburi','Lop Buri','Saraburi'))
     plt.show()
 central_bkk()
-
-
-# In[45]:
 
 """this fuction has shown number of sedan cars users and bus in East"""
 def east():
@@ -325,9 +220,6 @@ def east():
     plt.show()
 east()
 
-
-# In[46]:
-
 '''this function show Percent of Bus:sedan in Western area by picking data to calculate'''
 def west():
     position = [1,3,5,7,9]
@@ -342,4 +234,3 @@ def west():
     plt.xticks(pos, ('Suphan Buri','Khanchana Buri','Nakhon Pathom','Ratchaburi','Samut Sakorn'))
     plt.show()
 west()
-
