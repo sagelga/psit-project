@@ -4,7 +4,7 @@ def test():
     ############################################
     #                data cal                  #
     ############################################
-    file_location = "C:/Users/SODA/Desktop/python/panda/data_cr.xls"
+    file_location = "/Resource/Thai Vehicle Stats.xlsx"
     workbook = xlrd.open_workbook(file_location)
     sheet = workbook.sheet_by_index(0)
     ############################################
