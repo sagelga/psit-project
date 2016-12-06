@@ -4,7 +4,7 @@ def test():
     ############################################
     #                data cal                  #
     ############################################
-    file_location = "/Resource/Thai Vehicle Stats.xlsx"
+    file_location = "Thai Vehicle Stats.xlsx"
     workbook = xlrd.open_workbook(file_location)
     sheet = workbook.sheet_by_index(0)
     ############################################
@@ -50,7 +50,7 @@ def test():
     #################################################################
     for i in range(len(want)):
         for n in range(len(provincial)):
-              if want[i] == provincial[n]:
+            if want[i] == provincial[n]:
                 pro_use.append(provincial[n])
                 sedan_use.append(sedan[n])
                 bus_use.append(bus[n])
