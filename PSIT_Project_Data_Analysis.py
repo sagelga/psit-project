@@ -10,10 +10,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import xlrd
-my_data = pd.read_csv('Thailand Vehicle Stats.csv', sep=',',header=None)
-
-# We just want to show what the CSV file looks like. It doesn't meant to do something.
-print(my_data)
 
 """This function will draw Pie Chart from data given"""
 def total_north_east_pie_chart():
@@ -240,7 +236,7 @@ def show_stat_bus_per_sedan():
     ############################################
     #                data cal                  #
     ############################################
-    file_location = "Thai Vehicle Stats.xlsx"
+    file_location = "Thai_Vehicle_Stats.xlsx"
     workbook = xlrd.open_workbook(file_location)
     sheet = workbook.sheet_by_index(0)
     ############################################
@@ -324,7 +320,7 @@ def mortor_per_sedan():
     ############################################
     #                data cal                  #
     ############################################
-    file_location = "Thai Vehicle Stats.xlsx"
+    file_location = "Thai_Vehicle_Stats.xlsx"
     workbook = xlrd.open_workbook(file_location)
     sheet = workbook.sheet_by_index(0)
     ############################################
