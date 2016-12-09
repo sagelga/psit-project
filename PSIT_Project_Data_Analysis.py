@@ -252,7 +252,7 @@ def show_stat_bus_per_sedan():
     ############################################
     ######      data collect from User     #####
     ############################################
-    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern', ]# user want to know
+    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern']# user want to know
     pro_use = []# for calculate percent
     sedan_use = []# for calculate percent
     bus_use = []# for calculate percent
@@ -336,7 +336,7 @@ def mortor_per_sedan():
     ############################################
     ######      data collect from User     #####
     ############################################
-    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern', ]# user want to know
+    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern']# user want to know
     pro_use = []# for calculate percent
     motorcycle_use = []# for calculate percent
     sedan_use = []# for calculate percent
