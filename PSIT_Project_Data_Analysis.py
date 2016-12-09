@@ -252,7 +252,7 @@ def show_stat_bus_per_sedan():
     ############################################
     ######      data collect from User     #####
     ############################################
-    want = []# user want to know
+    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern', ]# user want to know
     pro_use = []# for calculate percent
     sedan_use = []# for calculate percent
     bus_use = []# for calculate percent
@@ -267,20 +267,20 @@ def show_stat_bus_per_sedan():
     #######################################################
     #####       get number of provincial for use      #####
     #######################################################
-    print("*****number of provincial that you want to show bus per sedan.*****")
-    number = int(input())
+    #print("*****number of provincial that you want to show bus per sedan.*****")
+    #number = int(input())
     #################################################################
     #####       show provincial that can use for calculate      #####
     #################################################################
-    print("****** Warning : You can input data form this list only if not program will error.*****")
-    for i in range(len(provincial)):
-        print(provincial[i])
-    print("****** Warning : You can input data form this list only if not program will error.*****")
+    #print("****** Warning : You can input data form this list only if not program will error.*****")
+    #for i in range(len(provincial)):
+    #    print(provincial[i])
+    #print("****** Warning : You can input data form this list only if not program will error.*****")
     #################################################################
     #####                   get data from user                  #####
     #################################################################
-    for i in range(number):
-        want.append(input())
+    #for i in range(number):
+    #    want.append(input())
     #################################################################
     #####       use that data to find others data from file     #####
     #################################################################
@@ -307,7 +307,7 @@ def show_stat_bus_per_sedan():
     for i in range(1,len(cal_percent)):
        position.append(position[i-1]+2)
     graph = plt.bar(position, cal_percent, label='Bus per Sedan in Thailand', color='c') # create graph formation
-    pos = [1.375,3.375,5.375,7.375,9.375] # position to show bar in graph
+    pos = [1.375,2.375,3.375,4.375,5.375,6.375,7.375] # position to show bar in graph
     plt.ylabel('percent')
     #y axis name
     plt.title('Percent of Bus per Sedan')
@@ -336,7 +336,7 @@ def mortor_per_sedan():
     ############################################
     ######      data collect from User     #####
     ############################################
-    want = []# user want to know
+    want = ['Whole Kingdom', 'Bangkok', 'Central', 'North Eastern', 'Western', 'Southern', 'Northern', ]# user want to know
     pro_use = []# for calculate percent
     motorcycle_use = []# for calculate percent
     sedan_use = []# for calculate percent
@@ -351,20 +351,20 @@ def mortor_per_sedan():
     #######################################################
     #####       get number of provincial for use      #####
     #######################################################
-    print("*****number of provincial that you want to show motorcycle per sedan.*****")
-    number = int(input())
+    #print("*****number of provincial that you want to show motorcycle per sedan.*****")
+    #number = int(input())
     #################################################################
     #####       show provincial that can use for calculate      #####
     #################################################################
-    print("****** Warning : You can input data form this list only if not program will error.*****")
-    for i in range(len(provincial)):
-        print(provincial[i])
-    print("****** Warning : You can input data form this list only if not program will error.*****")
+    #print("****** Warning : You can input data form this list only if not program will error.*****")
+    #for i in range(len(provincial)):
+    #    print(provincial[i])
+    #print("****** Warning : You can input data form this list only if not program will error.*****")
     #################################################################
     #####                   get data from user                  #####
     #################################################################
-    for i in range(number):
-        want.append(input())
+    #for i in range(number):
+    #    want.append(input())
     #################################################################
     #####       use that data to find others data from file     #####
     #################################################################
